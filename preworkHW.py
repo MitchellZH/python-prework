@@ -48,20 +48,14 @@ print(result)
 # Write a function to check to see if all numbers in list are consecutive numbers. 
 # For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers. The return should be boolean Type.
 
-# def is_consecutive(a_list):
-#   a_list.sort()
-#   generatedList = list(range[min(a_list),max(a_list)])
+def is_consecutive(a_list):
+  a_list.sort()
+  generatedList = list(range(min(a_list),max(a_list)+1))
   
-#   if generatedList == a_list:
-#     return True
-#   else: 
-#     return False 
+  if generatedList == a_list:
+    return True
+  else: 
+    return False 
 
 
-# is_consecutive([3,1,26,15])
-
-a_list = [3,1,26,15]
-a_list.sort()
-print(a_list)
-print(type(max(a_list)))
-range
+is_consecutive([4,5,7,8])
